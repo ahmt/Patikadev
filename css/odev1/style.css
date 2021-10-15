@@ -1,0 +1,102 @@
+*{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+
+}
+body{
+    background-color: bisque;
+}
+.header{
+    height: 60px;
+    background-color: aqua;
+    display: flex;
+    
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+}
+.menu{
+    display: flex;
+   
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+ul{
+    height: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    
+    
+}
+li:hover{
+    height: 100%;
+    border: 1px solid;
+    background-color: white;
+}
+.main{
+    
+    width: 60%;
+    justify-content: center;
+    margin: 10px 20% 0 20%;
+}
+
+.baslik , .gitar, h3{
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+   
+}
+.abc{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+address{
+    text-align: right;
+    padding: 10px;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.model{
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 400px;
+    border: solid 1px gray;
+}
+.modeller{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+ 
+    
+}
+button{
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: green;
+    cursor: pointer;
+}
