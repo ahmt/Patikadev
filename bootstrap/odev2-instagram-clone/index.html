@@ -1,3 +1,5 @@
+<!-- Patika dev bootstap modülü için instagram clone şeklinde yapılmıştır. Mobilde problemleri vardır. Js ile class eklenip silinerek bu problemler çözülebilir. Ancak geçmişten yarım bir proje olarak devam
+edildiği için ortalık biraz karıtı ve içinden çıkılmaz bir hale geldi. Bir sonraki projelerde düzeltmek ümidiyle -->
 <!doctype html>
 <html lang="en">
 
@@ -119,7 +121,7 @@
             <div class="abc col-lg-8 mt-3">
 
                 <!-- Story alanı-->
-                <div class="row  mt-3" style="overflow: scroll; height: 100px; align-items: center; border: 1px solid rgba(var(--b6a,219,219,219),1) ">
+                <div class="row  justify-content-center  mt-5 mx-auto" style="overflow: scroll; height: 100px; align-items: center; border: 1px solid rgba(var(--b6a,219,219,219),1) ">
                     
                     <div class="col-2">
                         <a href="#"></ah><img class="story" src="https://picsum.photos/id/237/200/300"></a>
@@ -134,21 +136,537 @@
                 <!-- story bitiş-->
 
                 <div class="row mt-3">
-                    <div class="container w-100 border-0 d-none d-lg-block d-flex flex-column" >
-                        <div class="post mt-5 d" style="height:  909px; background-color: green;"></div>
-                        <div class="post mt-5" style="height:  909px; background-color: gray;"></div>
-                        <div class="post mt-5" style="height:  909px; background-color: pink;"></div>
-                        <div class="post mt-5" style="height:  909px; background-color: yellow;"></div>
-                        <div class="post mt-5" style="height:  909px; background-color: red;"></div>
+                    <div class="container w-100 border-0 d-none d-lg-block d-flex flex-column"  style="border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                        <div class="post mt-5 d-flex flex-column" style="height:  909px;  border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                        <!--  Post Head Balangıç-->
+                        <div class="post-head d-flex justify-content-between" style="height : 60px; align-items : center; border: 1px solid rgba(var(--b6a,219,219,219),1)"><div class="profile">
+                            <img  style="width: 32; height: 32; border-radius: 50%;" class="px-3" src="https://picsum.photos/id/12/32/32 " alt="poriflephotosm">
+                            Profil 1
+                        </div>
+                        <div class="icons">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        </div>
+                        <!--  Post Head bitişi-->
+                        
+                        <!--  Post image başlangıç-->
+                        
+                            <div class="post-photo ">
+                            <img  class="w-100" style="height: 600px;" src="https://picsum.photos/id/614/614 " alt="poriflephotosm">
+
+                        </div>
+                        <!--  Post image bitişi-->
+
+                        <!--  Post icons başlangıç-->
+                            <div class="icons d-flex gap-3 " style=" padding: 0 10px; align-items : center; height : 60px;border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                <i class="far fa-heart" style="height: 24px; width: 24px;"></i>
+                                <i class="far fa-comment" style="height: 24px; width: 24px;"></i>
+                                <i class="fas fa-share" style="height: 24px; width: 24px;"></i>
+
+                            </div>
+
+                        <!--  Post icons bitişi-->
+
+
+                        <!--  Post comments başlangıç-->
+                                <div class="comment-area" style="flex-grow: 1;"> 
+                                    <div class="likes">
+                                    <h5>5 likes</h5>
+                                </div>
+                                <div class="comment">
+                                    <b>Profile 1 </b>
+                                    <span>Bu instagram yorumudur.</span>
+                                </div>
+                               </div>
+                        <!--  Post comment bitişi-->
+
+                        <!-- Comment Add  başlangıç-->
+                        <div class="add-comment d-flex" style="align-items : center; height: 53px; position : realitive; bottom :-53; border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                            <i class="far fa-smile"></i>
+                            <input style="text-align: center; flex-grow: 1;" type="text" placeholder="Yorum Ekle...">
+                            <button style="border: none;">Paylaş</button>
+                        </div>
+                        <!-- Comment Add  bitiş-->
+
+                        
+                        </div>
+                        <div class="post mt-5 d-flex flex-column" style="height:  909px;  border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                            <!--  Post Head Balangıç-->
+                            <div class="post-head d-flex justify-content-between" style="height : 60px; align-items : center; border: 1px solid rgba(var(--b6a,219,219,219),1)"><div class="profile">
+                                <img  style="width: 32; height: 32; border-radius: 50%;" class="px-3" src="https://picsum.photos/id/12/32/32 " alt="poriflephotosm">
+                                Profil 1
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            </div>
+                            <!--  Post Head bitişi-->
+                            
+                            <!--  Post image başlangıç-->
+                            
+                                <div class="post-photo ">
+                                <img  class="w-100" style="height: 600px;" src="https://picsum.photos/id/614/614 " alt="poriflephotosm">
+    
+                            </div>
+                            <!--  Post image bitişi-->
+    
+                            <!--  Post icons başlangıç-->
+                                <div class="icons d-flex gap-3 " style=" padding: 0 10px; align-items : center; height : 60px;border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                    <i class="far fa-heart" style="height: 24px; width: 24px;"></i>
+                                    <i class="far fa-comment" style="height: 24px; width: 24px;"></i>
+                                    <i class="fas fa-share" style="height: 24px; width: 24px;"></i>
+    
+                                </div>
+    
+                            <!--  Post icons bitişi-->
+    
+    
+                            <!--  Post comments başlangıç-->
+                                    <div class="comment-area" style="flex-grow: 1;"> 
+                                        <div class="likes">
+                                        <h5>5 likes</h5>
+                                    </div>
+                                    <div class="comment">
+                                        <b>Profile 1 </b>
+                                        <span>Bu instagram yorumudur.</span>
+                                    </div>
+                                   </div>
+                            <!--  Post comment bitişi-->
+    
+                            <!-- Comment Add  başlangıç-->
+                            <div class="add-comment d-flex" style="align-items : center; height: 53px; position : realitive; bottom :-53; border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                <i class="far fa-smile"></i>
+                                <input style="text-align: center; flex-grow: 1;" type="text" placeholder="Yorum Ekle...">
+                                <button style="border: none;">Paylaş</button>
+                            </div>
+                            <!-- Comment Add  bitiş-->
+    
+                            
+                            </div>
+                            <div class="post mt-5 d-flex flex-column" style="height:  909px;  border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                <!--  Post Head Balangıç-->
+                                <div class="post-head d-flex justify-content-between" style="height : 60px; align-items : center; border: 1px solid rgba(var(--b6a,219,219,219),1)"><div class="profile">
+                                    <img  style="width: 32; height: 32; border-radius: 50%;" class="px-3" src="https://picsum.photos/id/12/32/32 " alt="poriflephotosm">
+                                    Profil 1
+                                </div>
+                                <div class="icons">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                                </div>
+                                <!--  Post Head bitişi-->
+                                
+                                <!--  Post image başlangıç-->
+                                
+                                    <div class="post-photo ">
+                                    <img  class="w-100" style="height: 600px;" src="https://picsum.photos/id/614/614 " alt="poriflephotosm">
+        
+                                </div>
+                                <!--  Post image bitişi-->
+        
+                                <!--  Post icons başlangıç-->
+                                    <div class="icons d-flex gap-3 " style=" padding: 0 10px; align-items : center; height : 60px;border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                        <i class="far fa-heart" style="height: 24px; width: 24px;"></i>
+                                        <i class="far fa-comment" style="height: 24px; width: 24px;"></i>
+                                        <i class="fas fa-share" style="height: 24px; width: 24px;"></i>
+        
+                                    </div>
+        
+                                <!--  Post icons bitişi-->
+        
+        
+                                <!--  Post comments başlangıç-->
+                                        <div class="comment-area" style="flex-grow: 1;"> 
+                                            <div class="likes">
+                                            <h5>5 likes</h5>
+                                        </div>
+                                        <div class="comment">
+                                            <b>Profile 1 </b>
+                                            <span>Bu instagram yorumudur.</span>
+                                        </div>
+                                       </div>
+                                <!--  Post comment bitişi-->
+        
+                                <!-- Comment Add  başlangıç-->
+                                <div class="add-comment d-flex" style="align-items : center; height: 53px; position : realitive; bottom :-53; border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                    <i class="far fa-smile"></i>
+                                    <input style="text-align: center; flex-grow: 1;" type="text" placeholder="Yorum Ekle...">
+                                    <button style="border: none;">Paylaş</button>
+                                </div>
+                                <!-- Comment Add  bitiş-->
+        
+                                
+                                </div>
+                                <div class="post mt-5 d-flex flex-column" style="height:  909px;  border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                    <!--  Post Head Balangıç-->
+                                    <div class="post-head d-flex justify-content-between" style="height : 60px; align-items : center; border: 1px solid rgba(var(--b6a,219,219,219),1)"><div class="profile">
+                                        <img  style="width: 32; height: 32; border-radius: 50%;" class="px-3" src="https://picsum.photos/id/12/32/32 " alt="poriflephotosm">
+                                        Profil 1
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </div>
+                                    </div>
+                                    <!--  Post Head bitişi-->
+                                    
+                                    <!--  Post image başlangıç-->
+                                    
+                                        <div class="post-photo ">
+                                        <img  class="w-100" style="height: 600px;" src="https://picsum.photos/id/614/614 " alt="poriflephotosm">
+            
+                                    </div>
+                                    <!--  Post image bitişi-->
+            
+                                    <!--  Post icons başlangıç-->
+                                        <div class="icons d-flex gap-3 " style=" padding: 0 10px; align-items : center; height : 60px;border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                            <i class="far fa-heart" style="height: 24px; width: 24px;"></i>
+                                            <i class="far fa-comment" style="height: 24px; width: 24px;"></i>
+                                            <i class="fas fa-share" style="height: 24px; width: 24px;"></i>
+            
+                                        </div>
+            
+                                    <!--  Post icons bitişi-->
+            
+            
+                                    <!--  Post comments başlangıç-->
+                                            <div class="comment-area" style="flex-grow: 1;"> 
+                                                <div class="likes">
+                                                <h5>5 likes</h5>
+                                            </div>
+                                            <div class="comment">
+                                                <b>Profile 1 </b>
+                                                <span>Bu instagram yorumudur.</span>
+                                            </div>
+                                           </div>
+                                    <!--  Post comment bitişi-->
+            
+                                    <!-- Comment Add  başlangıç-->
+                                    <div class="add-comment d-flex" style="align-items : center; height: 53px; position : realitive; bottom :-53; border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                        <i class="far fa-smile"></i>
+                                        <input style="text-align: center; flex-grow: 1;" type="text" placeholder="Yorum Ekle...">
+                                        <button style="border: none;">Paylaş</button>
+                                    </div>
+                                    <!-- Comment Add  bitiş-->
+            
+                                    
+                                    </div>
+                                    <div class="post mt-5 d-flex flex-column" style="height:  909px;  border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                        <!--  Post Head Balangıç-->
+                                        <div class="post-head d-flex justify-content-between" style="height : 60px; align-items : center; border: 1px solid rgba(var(--b6a,219,219,219),1)"><div class="profile">
+                                            <img  style="width: 32; height: 32; border-radius: 50%;" class="px-3" src="https://picsum.photos/id/12/32/32 " alt="poriflephotosm">
+                                            Profil 1
+                                        </div>
+                                        <div class="icons">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        </div>
+                                        <!--  Post Head bitişi-->
+                                        
+                                        <!--  Post image başlangıç-->
+                                        
+                                            <div class="post-photo ">
+                                            <img  class="w-100" style="height: 600px;" src="https://picsum.photos/id/614/614 " alt="poriflephotosm">
+                
+                                        </div>
+                                        <!--  Post image bitişi-->
+                
+                                        <!--  Post icons başlangıç-->
+                                            <div class="icons d-flex gap-3 " style=" padding: 0 10px; align-items : center; height : 60px;border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                                <i class="far fa-heart" style="height: 24px; width: 24px;"></i>
+                                                <i class="far fa-comment" style="height: 24px; width: 24px;"></i>
+                                                <i class="fas fa-share" style="height: 24px; width: 24px;"></i>
+                
+                                            </div>
+                
+                                        <!--  Post icons bitişi-->
+                
+                
+                                        <!--  Post comments başlangıç-->
+                                                <div class="comment-area" style="flex-grow: 1;"> 
+                                                    <div class="likes">
+                                                    <h5>5 likes</h5>
+                                                </div>
+                                                <div class="comment">
+                                                    <b>Profile 1 </b>
+                                                    <span>Bu instagram yorumudur.</span>
+                                                </div>
+                                               </div>
+                                        <!--  Post comment bitişi-->
+                
+                                        <!-- Comment Add  başlangıç-->
+                                        <div class="add-comment d-flex" style="align-items : center; height: 53px; position : realitive; bottom :-53; border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                            <i class="far fa-smile"></i>
+                                            <input style="text-align: center; flex-grow: 1;" type="text" placeholder="Yorum Ekle...">
+                                            <button style="border: none;">Paylaş</button>
+                                        </div>
+                                        <!-- Comment Add  bitiş-->
+                
+                                        
+                                        </div>
                     
                     
                 </div>
                 <div class="container-fluid d-sm-block d-lg-none">
-                    <div class="post mt-5 d" style="height:  909px; background-color: green;"></div>
-                    <div class="post mt-5" style="height:  909px; background-color: gray;"></div>
-                    <div class="post mt-5" style="height:  909px; background-color: pink;"></div>
-                    <div class="post mt-5" style="height:  909px; background-color: yellow;"></div>
-                    <div class="post mt-5" style="height:  909px; background-color: red;"></div>
+                    <div class="post mt-5 d-flex flex-column" style="height:  909px;  border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                        <!--  Post Head Balangıç-->
+                        <div class="post-head d-flex justify-content-between" style="height : 60px; align-items : center; border: 1px solid rgba(var(--b6a,219,219,219),1)"><div class="profile">
+                            <img  style="width: 32; height: 32; border-radius: 50%;" class="px-3" src="https://picsum.photos/id/12/32/32 " alt="poriflephotosm">
+                            Profil 1
+                        </div>
+                        <div class="icons">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        </div>
+                        <!--  Post Head bitişi-->
+                        
+                        <!--  Post image başlangıç-->
+                        
+                            <div class="post-photo ">
+                            <img  class="w-100" style="height: 600px;" src="https://picsum.photos/id/614/614 " alt="poriflephotosm">
+
+                        </div>
+                        <!--  Post image bitişi-->
+
+                        <!--  Post icons başlangıç-->
+                            <div class="icons d-flex gap-3 " style=" padding: 0 10px; align-items : center; height : 60px;border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                <i class="far fa-heart" style="height: 24px; width: 24px;"></i>
+                                <i class="far fa-comment" style="height: 24px; width: 24px;"></i>
+                                <i class="fas fa-share" style="height: 24px; width: 24px;"></i>
+
+                            </div>
+
+                        <!--  Post icons bitişi-->
+
+
+                        <!--  Post comments başlangıç-->
+                                <div class="comment-area" style="flex-grow: 1;"> 
+                                    <div class="likes">
+                                    <h5>5 likes</h5>
+                                </div>
+                                <div class="comment">
+                                    <b>Profile 1 </b>
+                                    <span>Bu instagram yorumudur.</span>
+                                </div>
+                               </div>
+                        <!--  Post comment bitişi-->
+
+                        <!-- Comment Add  başlangıç-->
+                        <div class="add-comment d-flex" style="align-items : center; height: 53px; position : realitive; bottom :-53; border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                            <i class="far fa-smile"></i>
+                            <input style="text-align: center; flex-grow: 1;" type="text" placeholder="Yorum Ekle...">
+                            <button style="border: none;">Paylaş</button>
+                        </div>
+                        <!-- Comment Add  bitiş-->
+
+                        
+                        </div><div class="post mt-5 d-flex flex-column" style="height:  909px;  border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                            <!--  Post Head Balangıç-->
+                            <div class="post-head d-flex justify-content-between" style="height : 60px; align-items : center; border: 1px solid rgba(var(--b6a,219,219,219),1)"><div class="profile">
+                                <img  style="width: 32; height: 32; border-radius: 50%;" class="px-3" src="https://picsum.photos/id/12/32/32 " alt="poriflephotosm">
+                                Profil 1
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            </div>
+                            <!--  Post Head bitişi-->
+                            
+                            <!--  Post image başlangıç-->
+                            
+                                <div class="post-photo ">
+                                <img  class="w-100" style="height: 600px;" src="https://picsum.photos/id/614/614 " alt="poriflephotosm">
+    
+                            </div>
+                            <!--  Post image bitişi-->
+    
+                            <!--  Post icons başlangıç-->
+                                <div class="icons d-flex gap-3 " style=" padding: 0 10px; align-items : center; height : 60px;border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                    <i class="far fa-heart" style="height: 24px; width: 24px;"></i>
+                                    <i class="far fa-comment" style="height: 24px; width: 24px;"></i>
+                                    <i class="fas fa-share" style="height: 24px; width: 24px;"></i>
+    
+                                </div>
+    
+                            <!--  Post icons bitişi-->
+    
+    
+                            <!--  Post comments başlangıç-->
+                                    <div class="comment-area" style="flex-grow: 1;"> 
+                                        <div class="likes">
+                                        <h5>5 likes</h5>
+                                    </div>
+                                    <div class="comment">
+                                        <b>Profile 1 </b>
+                                        <span>Bu instagram yorumudur.</span>
+                                    </div>
+                                   </div>
+                            <!--  Post comment bitişi-->
+    
+                            <!-- Comment Add  başlangıç-->
+                            <div class="add-comment d-flex" style="align-items : center; height: 53px; position : realitive; bottom :-53; border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                <i class="far fa-smile"></i>
+                                <input style="text-align: center; flex-grow: 1;" type="text" placeholder="Yorum Ekle...">
+                                <button style="border: none;">Paylaş</button>
+                            </div>
+                            <!-- Comment Add  bitiş-->
+    
+                            
+                            </div><div class="post mt-5 d-flex flex-column" style="height:  909px;  border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                <!--  Post Head Balangıç-->
+                                <div class="post-head d-flex justify-content-between" style="height : 60px; align-items : center; border: 1px solid rgba(var(--b6a,219,219,219),1)"><div class="profile">
+                                    <img  style="width: 32; height: 32; border-radius: 50%;" class="px-3" src="https://picsum.photos/id/12/32/32 " alt="poriflephotosm">
+                                    Profil 1
+                                </div>
+                                <div class="icons">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                                </div>
+                                <!--  Post Head bitişi-->
+                                
+                                <!--  Post image başlangıç-->
+                                
+                                    <div class="post-photo ">
+                                    <img  class="w-100" style="height: 600px;" src="https://picsum.photos/id/614/614 " alt="poriflephotosm">
+        
+                                </div>
+                                <!--  Post image bitişi-->
+        
+                                <!--  Post icons başlangıç-->
+                                    <div class="icons d-flex gap-3 " style=" padding: 0 10px; align-items : center; height : 60px;border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                        <i class="far fa-heart" style="height: 24px; width: 24px;"></i>
+                                        <i class="far fa-comment" style="height: 24px; width: 24px;"></i>
+                                        <i class="fas fa-share" style="height: 24px; width: 24px;"></i>
+        
+                                    </div>
+        
+                                <!--  Post icons bitişi-->
+        
+        
+                                <!--  Post comments başlangıç-->
+                                        <div class="comment-area" style="flex-grow: 1;"> 
+                                            <div class="likes">
+                                            <h5>5 likes</h5>
+                                        </div>
+                                        <div class="comment">
+                                            <b>Profile 1 </b>
+                                            <span>Bu instagram yorumudur.</span>
+                                        </div>
+                                       </div>
+                                <!--  Post comment bitişi-->
+        
+                                <!-- Comment Add  başlangıç-->
+                                <div class="add-comment d-flex" style="align-items : center; height: 53px; position : realitive; bottom :-53; border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                    <i class="far fa-smile"></i>
+                                    <input style="text-align: center; flex-grow: 1;" type="text" placeholder="Yorum Ekle...">
+                                    <button style="border: none;">Paylaş</button>
+                                </div>
+                                <!-- Comment Add  bitiş-->
+        
+                                
+                                </div><div class="post mt-5 d-flex flex-column" style="height:  909px;  border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                    <!--  Post Head Balangıç-->
+                                    <div class="post-head d-flex justify-content-between" style="height : 60px; align-items : center; border: 1px solid rgba(var(--b6a,219,219,219),1)"><div class="profile">
+                                        <img  style="width: 32; height: 32; border-radius: 50%;" class="px-3" src="https://picsum.photos/id/12/32/32 " alt="poriflephotosm">
+                                        Profil 1
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </div>
+                                    </div>
+                                    <!--  Post Head bitişi-->
+                                    
+                                    <!--  Post image başlangıç-->
+                                    
+                                        <div class="post-photo ">
+                                        <img  class="w-100" style="height: 600px;" src="https://picsum.photos/id/614/614 " alt="poriflephotosm">
+            
+                                    </div>
+                                    <!--  Post image bitişi-->
+            
+                                    <!--  Post icons başlangıç-->
+                                        <div class="icons d-flex gap-3 " style=" padding: 0 10px; align-items : center; height : 60px;border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                            <i class="far fa-heart" style="height: 24px; width: 24px;"></i>
+                                            <i class="far fa-comment" style="height: 24px; width: 24px;"></i>
+                                            <i class="fas fa-share" style="height: 24px; width: 24px;"></i>
+            
+                                        </div>
+            
+                                    <!--  Post icons bitişi-->
+            
+            
+                                    <!--  Post comments başlangıç-->
+                                            <div class="comment-area" style="flex-grow: 1;"> 
+                                                <div class="likes">
+                                                <h5>5 likes</h5>
+                                            </div>
+                                            <div class="comment">
+                                                <b>Profile 1 </b>
+                                                <span>Bu instagram yorumudur.</span>
+                                            </div>
+                                           </div>
+                                    <!--  Post comment bitişi-->
+            
+                                    <!-- Comment Add  başlangıç-->
+                                    <div class="add-comment d-flex" style="align-items : center; height: 53px; position : realitive; bottom :-53; border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                        <i class="far fa-smile"></i>
+                                        <input style="text-align: center; flex-grow: 1;" type="text" placeholder="Yorum Ekle...">
+                                        <button style="border: none;">Paylaş</button>
+                                    </div>
+                                    <!-- Comment Add  bitiş-->
+            
+                                    
+                                    </div><div class="post mt-5 d-flex flex-column" style="height:  909px;  border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                        <!--  Post Head Balangıç-->
+                                        <div class="post-head d-flex justify-content-between" style="height : 60px; align-items : center; border: 1px solid rgba(var(--b6a,219,219,219),1)"><div class="profile">
+                                            <img  style="width: 32; height: 32; border-radius: 50%;" class="px-3" src="https://picsum.photos/id/12/32/32 " alt="poriflephotosm">
+                                            Profil 1
+                                        </div>
+                                        <div class="icons">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                        </div>
+                                        <!--  Post Head bitişi-->
+                                        
+                                        <!--  Post image başlangıç-->
+                                        
+                                            <div class="post-photo ">
+                                            <img  class="w-100" style="height: 600px;" src="https://picsum.photos/id/13/614/614 " alt="poriflephotosm">
+                
+                                        </div>
+                                        <!--  Post image bitişi-->
+                
+                                        <!--  Post icons başlangıç-->
+                                            <div class="icons d-flex gap-3 " style=" padding: 0 10px; align-items : center; height : 60px;border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                                <i class="far fa-heart" style="height: 24px; width: 24px;"></i>
+                                                <i class="far fa-comment" style="height: 24px; width: 24px;"></i>
+                                                <i class="fas fa-share" style="height: 24px; width: 24px;"></i>
+                
+                                            </div>
+                
+                                        <!--  Post icons bitişi-->
+                
+                
+                                        <!--  Post comments başlangıç-->
+                                                <div class="comment-area" style="flex-grow: 1;"> 
+                                                    <div class="likes">
+                                                    <h5>5 likes</h5>
+                                                </div>
+                                                <div class="comment">
+                                                    <b>Profile 1 </b>
+                                                    <span>Bu instagram yorumudur.</span>
+                                                </div>
+                                               </div>
+                                        <!--  Post comment bitişi-->
+                
+                                        <!-- Comment Add  başlangıç-->
+                                        <div class="add-comment d-flex" style="align-items : center; height: 53px; position : realitive; bottom :-53; border: 1px solid rgba(var(--b6a,219,219,219),1)">
+                                            <i class="far fa-smile"></i>
+                                            <input style="text-align: center; flex-grow: 1;" type="text" placeholder="Yorum Ekle...">
+                                            <button style="border: none;">Paylaş</button>
+                                        </div>
+                                        <!-- Comment Add  bitiş-->
+                
+                                        
+                                        </div>
                 </div>
             </div>
 
