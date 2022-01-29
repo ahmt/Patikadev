@@ -47,6 +47,8 @@ button.mediatext:hover {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: #5f5f5f;
+  border: none;
+  background-color: #5f5f5f;
 }
 
 i {
