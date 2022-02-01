@@ -1,13 +1,29 @@
 let counter = 0;
-let active = true;
-const list = document.getElementById(list)
+
+let liItem;
+let inputText = document.querySelector('#task');
+
+let ul = document.querySelector('#list');
+
 const newElement = () =>{
     counter++
-    let inputText = document.querySelector('#task');
-    localStorage.setItem(counter, inputText.value);
-    console.log(inputText.value)
-    const listItems = document.createElement('li')
-    listItems.innerHTML = `${localStorage.getItem(counter)}`
-    document.body.appendChild(list)
+    
+    localStorage.setItem(counter , inputText.value );
+   
+    
+    liItem = document.createElement("li","span")
+    let btnDelete = document.createElement("span")
+    btnDelete.innerHTML = "Sil"
+    
+    liItem.textContent = localStorage.getItem(counter);
+    ul.append(liItem, btnDelete);
+    
 
+
+}
+
+const resetToDo = () =>{
+    localStorage.clear();
+    while  (ul.firstChild) {
+    ul.removeChild(ul.lastChild) }
 }
