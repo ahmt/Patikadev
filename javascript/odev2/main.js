@@ -11,13 +11,13 @@ const newElement = () =>{
     localStorage.setItem(counter , inputText.value );
    
     
-    liItem = document.createElement("li","span")
+    liItem = document.createElement("li")
     let btnDelete = document.createElement("span")
-    btnDelete.innerHTML = "Sil"
+    
     
     liItem.textContent = localStorage.getItem(counter);
-    ul.append(liItem, btnDelete);
-    
+    ul.append(liItem);
+    btnDelete.insertAdjacentElement('afterbegin', liItem);
 
 
 }
@@ -25,5 +25,6 @@ const newElement = () =>{
 const resetToDo = () =>{
     localStorage.clear();
     while  (ul.firstChild) {
-    ul.removeChild(ul.lastChild) }
-}
+    ul.removeChild(ul.lastChild);
+
+};
