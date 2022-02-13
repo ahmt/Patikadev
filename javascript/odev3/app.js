@@ -81,20 +81,117 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
-const newMenu = menu.map(item =>
-    console.log(item.title)
-  )
+const buttonArea = document.querySelector('#a1');
+const ekle = document.querySelector('#a2')
+const allItem = () =>{
+  menu.forEach(element => {
+    console.log(element.category)
+    myCard(element);
+  });
+
+}
+const myCard = (e) =>{
+  console.log(e)
+  ekle.classList.add("d-flex")
+  const cardDiv = document.createElement("div");
+  cardDiv.classList.add("col-5", "mx-auto" , "d-flex", "mb-4");
+
+  const leftSdie = document.createElement("div");
+  leftSdie.classList.add("col-4");
+
+  const image = document.createElement("img")
+  image.src = e.img;
+  image.style.border="3px solid black" 
+  image.style.borderRadius = "10px"
+  image.style.height = "150px";
+  image.style.width = "150px"
+  leftSdie.appendChild(image);
+
+
+  const rightSide = document.createElement("div");
+  rightSide.classList.add("col", "d-flex" , "flex-column");
+
+  const rightSideTop = document.createElement("div");
+   rightSideTop.classList.add("d-flex", "w-100" ,"justify-content-between", "col-3")
+   rightSideTop.style.borderBottom = "2px solid black"
+  
+
+  const foodName = document.createElement("span")
+  foodName.innerText = e.title;
+  
+  const foodPrice = document.createElement("span")
+  foodPrice.innerText = e.price;
+  rightSideTop.appendChild(foodName);
+  rightSideTop.appendChild(foodPrice);
+
+  const rightSideBottom = document.createElement("div")
+  rightSideBottom.classList.add("col", "mt-4")
+  const desc = document.createElement("p");
+  desc.innerText = e.desc;
+  rightSideBottom.appendChild(desc);
+  rightSide.appendChild(rightSideTop)
+  rightSide.appendChild(rightSideBottom);
+
+  cardDiv.appendChild(leftSdie);
+  cardDiv.appendChild(rightSide); 
+  ekle.appendChild(cardDiv);
+  ekle.classList.add("flex-wrap")
+
+}
+allItem();
+
+const filtered = (e) =>{
+  ekle.innerHTML =  '';
+  const text =e.target.innerText;
+  const filterMenu = menu.filter(e => e.category == text)
+  if(text == "All"){
+    menu.forEach(element => {
+        myCard(element)
+    });
+  }
+  filterMenu.forEach(element => {
+    
+      myCard(element)
+    
+  });
+  
+}
+
+const addButtons = () =>{
+
+const myMenuDiv = document.createElement("div");
+myMenuDiv.classList.add("d-flex", "w-50","mx-auto", "align-items-center" ,"justify-content-center");
 
 const btnAll = document.createElement("button");
+btnAll.classList.add("btnAll", "mr-2")
 btnAll.innerText = "All";
+btnAll.addEventListener("click", filtered) 
+
 const btnKorea = document.createElement("button");
+btnKorea.classList.add("btnKorea", "mr-2")
 btnKorea.innerText = "Korea";
+btnKorea.addEventListener("click" , filtered)
+
 const btnJapan = document.createElement("button");
+btnJapan.classList.add("btnJapan", "mr-2")
 btnJapan.innerText = "Japan";
+btnJapan.addEventListener("click", filtered)
+
 const btnChina = document.createElement("button");
 btnChina.innerText = "China";
+btnChina.classList.add("btnChina");
+btnChina.addEventListener("click", filtered)
 
 
-const btnAre = document.querySelector("#a1");
 
-btnAre.append(btnAll)
+
+myMenuDiv.appendChild(btnAll);
+myMenuDiv.appendChild(btnKorea);
+myMenuDiv.appendChild(btnJapan);
+myMenuDiv.appendChild(btnChina);
+buttonArea.appendChild(myMenuDiv)
+
+}
+addButtons();
+
+
