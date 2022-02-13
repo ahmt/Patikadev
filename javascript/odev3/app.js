@@ -81,3 +81,20 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
+const newMenu = menu.map(item =>
+    console.log(item.title)
+  )
+
+const btnAll = document.createElement("button");
+btnAll.innerText = "All";
+const btnKorea = document.createElement("button");
+btnKorea.innerText = "Korea";
+const btnJapan = document.createElement("button");
+btnJapan.innerText = "Japan";
+const btnChina = document.createElement("button");
+btnChina.innerText = "China";
+
+
+const btnAre = document.querySelector("#a1");
+
+btnAre.append(btnAll)

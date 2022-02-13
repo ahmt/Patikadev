@@ -7,7 +7,7 @@ ul {
   padding: 0;
 }
 
-ul li {
+ul li , ul li li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
@@ -20,24 +20,32 @@ ul li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  display: flex;
+  justify-content: space-between;
   
 }
-
-ul li:nth-child(odd) {
+.mydiv{
+  display: flex;
+  justify-content: space-between;
+}
+ul li li{
+  width: 100%;
+}
+ul li:nth-child(odd) ,ul li li:nth-child(odd) {
   background: #f9f9f9;
 }
 
-ul li:hover {
+ul li:hover , ul li li:hover{
   background: #ddd;
 }
 
-ul li.checked {
+ul li.checked ,ul li li.checked{
   background: #276678;
   color: #fff;
   text-decoration: line-through;
 }
 
-ul li.checked::before {
+ul li.checked::before , ul li li.checked::before{
   content: "";
   position: absolute;
   border-color: #fff;
