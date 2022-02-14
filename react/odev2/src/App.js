@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import list from './components/list';
+import listDiv from './components/listDiv';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+     
     </div>
   );
 }
